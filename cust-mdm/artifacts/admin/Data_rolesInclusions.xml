@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<directory>
+    <rolesInclusions>
+        <encompassingRole>COMM - Reference Data Approver</encompassingRole>
+        <includedRole>COMM</includedRole>
+    </rolesInclusions>
+    <rolesInclusions>
+        <encompassingRole>COMM - Reference Data Entry</encompassingRole>
+        <includedRole>COMM</includedRole>
+    </rolesInclusions>
+    <rolesInclusions>
+        <encompassingRole>COMM - Reference Data Self Approver</encompassingRole>
+        <includedRole>COMM - Reference Data Approver</includedRole>
+    </rolesInclusions>
+    <rolesInclusions>
+        <encompassingRole>COMM - Reference Data Self Approver</encompassingRole>
+        <includedRole>COMM - Reference Data Entry</includedRole>
+    </rolesInclusions>
+    <rolesInclusions>
+        <encompassingRole>CUST - Data Approver</encompassingRole>
+        <includedRole>CUST</includedRole>
+    </rolesInclusions>
+    <rolesInclusions>
+        <encompassingRole>CUST - Data Entry</encompassingRole>
+        <includedRole>CUST</includedRole>
+    </rolesInclusions>
+    <rolesInclusions>
+        <encompassingRole>CUST - Data Self Approver</encompassingRole>
+        <includedRole>CUST - Data Approver</includedRole>
+    </rolesInclusions>
+    <rolesInclusions>
+        <encompassingRole>CUST - Data Self Approver</encompassingRole>
+        <includedRole>CUST - Data Entry</includedRole>
+    </rolesInclusions>
+    <rolesInclusions>
+        <encompassingRole>CUST - Reference Data Approver</encompassingRole>
+        <includedRole>CUST</includedRole>
+    </rolesInclusions>
+    <rolesInclusions>
+        <encompassingRole>CUST - Reference Data Entry</encompassingRole>
+        <includedRole>CUST</includedRole>
+    </rolesInclusions>
+    <rolesInclusions>
+        <encompassingRole>CUST - Reference Data Self Approver</encompassingRole>
+        <includedRole>CUST - Reference Data Approver</includedRole>
+    </rolesInclusions>
+    <rolesInclusions>
+        <encompassingRole>CUST - Reference Data Self Approver</encompassingRole>
+        <includedRole>CUST - Reference Data Entry</includedRole>
+    </rolesInclusions>
+</directory>
