@@ -71,6 +71,11 @@
                     <inputParameter>true</inputParameter>
                     <outputParameter>true</outputParameter>
                 </variable>
+                <variable>
+                    <name>currentUsersForRoles</name>
+                    <inputParameter>true</inputParameter>
+                    <outputParameter>true</outputParameter>
+                </variable>
             </dataContext>
             <notificationProcessInError>
                 <profiles>RWorkflow Administrator</profiles>

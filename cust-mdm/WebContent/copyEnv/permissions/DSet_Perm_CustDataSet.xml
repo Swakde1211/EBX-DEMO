@@ -15,7 +15,7 @@
                 <createAllowed>false</createAllowed>
                 <overwriteAllowed>false</overwriteAllowed>
                 <occultAllowed>false</occultAllowed>
-                <deleteAllowed>true</deleteAllowed>
+                <deleteAllowed>false</deleteAllowed>
             </tableDefaultActions>
         </tableActions>
         <valueAccess>
@@ -27,11 +27,11 @@
                 <servicePermission>E</servicePermission>
             </serviceAccess>
             <serviceAccess>
-                <serviceName>ebx-addon-adix@ExportExcel</serviceName>
+                <serviceName>ebx-addon-adix@ExportMultipleTables</serviceName>
                 <servicePermission>E</servicePermission>
             </serviceAccess>
             <serviceAccess>
-                <serviceName>ebx-addon-adix@ExportMultipleTables</serviceName>
+                <serviceName>ebx-addon-adix@ExportExcel</serviceName>
                 <servicePermission>E</servicePermission>
             </serviceAccess>
             <serviceAccess>
@@ -51,11 +51,11 @@
                 <servicePermission>D</servicePermission>
             </serviceAccess>
             <serviceAccess>
-                <serviceName>ebx-addon-adix@ImportSingleExcel</serviceName>
+                <serviceName>ebx-addon-adix@ImportMultipleTables</serviceName>
                 <servicePermission>D</servicePermission>
             </serviceAccess>
             <serviceAccess>
-                <serviceName>ebx-addon-adix@ImportMultipleTables</serviceName>
+                <serviceName>ebx-addon-adix@ImportSingleExcel</serviceName>
                 <servicePermission>D</servicePermission>
             </serviceAccess>
             <serviceAccess>
@@ -67,7 +67,15 @@
                 <servicePermission>E</servicePermission>
             </serviceAccess>
             <serviceAccess>
-                <serviceName>DisplayFullValidationReport</serviceName>
+                <serviceName>ebx-addon-tese@Search</serviceName>
+                <servicePermission>E</servicePermission>
+            </serviceAccess>
+            <serviceAccess>
+                <serviceName>@optimize</serviceName>
+                <servicePermission>E</servicePermission>
+            </serviceAccess>
+            <serviceAccess>
+                <serviceName>@validation</serviceName>
                 <servicePermission>D</servicePermission>
             </serviceAccess>
             <serviceAccess>
@@ -84,18 +92,6 @@
             </serviceAccess>
             <serviceAccess>
                 <serviceName>@importFromXML</serviceName>
-                <servicePermission>D</servicePermission>
-            </serviceAccess>
-            <serviceAccess>
-                <serviceName>ebx-addon-tese@Search</serviceName>
-                <servicePermission>E</servicePermission>
-            </serviceAccess>
-            <serviceAccess>
-                <serviceName>@optimize</serviceName>
-                <servicePermission>E</servicePermission>
-            </serviceAccess>
-            <serviceAccess>
-                <serviceName>@validation</serviceName>
                 <servicePermission>D</servicePermission>
             </serviceAccess>
         </listServicesAccess>

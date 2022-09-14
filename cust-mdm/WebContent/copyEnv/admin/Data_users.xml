@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <directory>
     <users>
+        <login>ReadOnly</login>
+        <firstName>User</firstName>
+        <lastName>ReadOnly</lastName>
+        <password>57d0808c68ad1bcd30a994585a9cdcb88a7689fa504f899c1a6960091e672c9b</password>
+        <passwordLastUpdate>2016-01-28T20:02:09.531</passwordLastUpdate>
+        <passwordMustChange>false</passwordMustChange>
+        <builtInRoles>
+            <administrator>false</administrator>
+            <readOnly>false</readOnly>
+        </builtInRoles>
+        <jobFunction>Permissions User</jobFunction>
+    </users>
+    <users>
         <login>adminOnly</login>
         <firstName>Admin</firstName>
         <lastName>Only</lastName>
@@ -132,19 +145,6 @@
             <readOnly>false</readOnly>
         </builtInRoles>
         <jobFunction>Test User</jobFunction>
-    </users>
-    <users>
-        <login>ReadOnly</login>
-        <firstName>User</firstName>
-        <lastName>ReadOnly</lastName>
-        <password>57d0808c68ad1bcd30a994585a9cdcb88a7689fa504f899c1a6960091e672c9b</password>
-        <passwordLastUpdate>2016-01-28T20:02:09.531</passwordLastUpdate>
-        <passwordMustChange>false</passwordMustChange>
-        <builtInRoles>
-            <administrator>false</administrator>
-            <readOnly>false</readOnly>
-        </builtInRoles>
-        <jobFunction>Permissions User</jobFunction>
     </users>
     <users>
         <login>techAdminOnly</login>

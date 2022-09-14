@@ -35,7 +35,7 @@
         <branchAccess>R</branchAccess>
         <childBranchCreation>D</childBranchCreation>
         <childVersionCreation>D</childVersionCreation>
-        <initiateMergeBranch>D</initiateMergeBranch>
+        <initiateMergeBranch>E</initiateMergeBranch>
         <exportBranch>D</exportBranch>
         <importBranch>D</importBranch>
         <closeBranch>D</closeBranch>
@@ -61,11 +61,11 @@
         <profile>RCUST - Data Entry</profile>
         <isRestrictionPolicy>false</isRestrictionPolicy>
         <branchAccess>W</branchAccess>
-        <childBranchCreation>D</childBranchCreation>
+        <childBranchCreation>E</childBranchCreation>
         <childVersionCreation>D</childVersionCreation>
         <initiateMergeBranch>D</initiateMergeBranch>
         <exportBranch>D</exportBranch>
-        <importBranch>D</importBranch>
+        <importBranch>E</importBranch>
         <closeBranch>D</closeBranch>
         <closeVersion>D</closeVersion>
         <rootInstanceCreation>D</rootInstanceCreation>

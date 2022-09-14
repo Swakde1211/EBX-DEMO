@@ -26,6 +26,7 @@
         <dataSpaceServices>
             <allowed>false</allowed>
             <restConnectorAllowed>true</restConnectorAllowed>
+            <restOpenApiServicesAllowed>true</restOpenApiServicesAllowed>
             <soapConnectorAllowed>true</soapConnectorAllowed>
             <wsdlConnectorAllowed>false</wsdlConnectorAllowed>
         </dataSpaceServices>
@@ -58,6 +59,7 @@
         <dataSpaceServices>
             <allowed>true</allowed>
             <restConnectorAllowed>true</restConnectorAllowed>
+            <restOpenApiServicesAllowed>true</restOpenApiServicesAllowed>
             <soapConnectorAllowed>true</soapConnectorAllowed>
             <wsdlConnectorAllowed>true</wsdlConnectorAllowed>
         </dataSpaceServices>

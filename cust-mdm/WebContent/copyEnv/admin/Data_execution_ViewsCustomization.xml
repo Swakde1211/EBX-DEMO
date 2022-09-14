@@ -6,6 +6,7 @@
                 <quickLaunching>false</quickLaunching>
                 <automaticallyOpenTheFirstStep>false</automaticallyOpenTheFirstStep>
                 <progressStrategyForUserTask>asynchronous</progressStrategyForUserTask>
+                <progressStrategyForSubworkflowsInvocation>asynchronous</progressStrategyForSubworkflowsInvocation>
                 <progressStrategyForScriptTask>asynchronous</progressStrategyForScriptTask>
                 <progressStrategyForCondition>asynchronous</progressStrategyForCondition>
                 <hiddenInGraphicalViewForScriptTask>false</hiddenInGraphicalViewForScriptTask>

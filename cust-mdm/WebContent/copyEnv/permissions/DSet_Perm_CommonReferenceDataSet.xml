@@ -15,7 +15,7 @@
                 <createAllowed>false</createAllowed>
                 <overwriteAllowed>false</overwriteAllowed>
                 <occultAllowed>false</occultAllowed>
-                <deleteAllowed>true</deleteAllowed>
+                <deleteAllowed>false</deleteAllowed>
             </tableDefaultActions>
         </tableActions>
         <valueAccess>
@@ -27,11 +27,11 @@
                 <servicePermission>E</servicePermission>
             </serviceAccess>
             <serviceAccess>
-                <serviceName>ebx-addon-adix@ExportExcel</serviceName>
+                <serviceName>ebx-addon-adix@ExportMultipleTables</serviceName>
                 <servicePermission>E</servicePermission>
             </serviceAccess>
             <serviceAccess>
-                <serviceName>ebx-addon-adix@ExportMultipleTables</serviceName>
+                <serviceName>ebx-addon-adix@ExportExcel</serviceName>
                 <servicePermission>E</servicePermission>
             </serviceAccess>
             <serviceAccess>
@@ -51,11 +51,11 @@
                 <servicePermission>D</servicePermission>
             </serviceAccess>
             <serviceAccess>
-                <serviceName>ebx-addon-adix@ImportSingleExcel</serviceName>
+                <serviceName>ebx-addon-adix@ImportMultipleTables</serviceName>
                 <servicePermission>D</servicePermission>
             </serviceAccess>
             <serviceAccess>
-                <serviceName>ebx-addon-adix@ImportMultipleTables</serviceName>
+                <serviceName>ebx-addon-adix@ImportSingleExcel</serviceName>
                 <servicePermission>D</servicePermission>
             </serviceAccess>
             <serviceAccess>
@@ -64,34 +64,6 @@
             </serviceAccess>
             <serviceAccess>
                 <serviceName>ebx-addon-adix@TransferData</serviceName>
-                <servicePermission>D</servicePermission>
-            </serviceAccess>
-            <serviceAccess>
-                <serviceName>DisplayFullValidationReport</serviceName>
-                <servicePermission>D</servicePermission>
-            </serviceAccess>
-            <serviceAccess>
-                <serviceName>@exportToCSV</serviceName>
-                <servicePermission>E</servicePermission>
-            </serviceAccess>
-            <serviceAccess>
-                <serviceName>ExportDevArtifacts</serviceName>
-                <servicePermission>D</servicePermission>
-            </serviceAccess>
-            <serviceAccess>
-                <serviceName>@exportToXML</serviceName>
-                <servicePermission>E</servicePermission>
-            </serviceAccess>
-            <serviceAccess>
-                <serviceName>@importFromCSV</serviceName>
-                <servicePermission>D</servicePermission>
-            </serviceAccess>
-            <serviceAccess>
-                <serviceName>ImportDevArtifacts</serviceName>
-                <servicePermission>D</servicePermission>
-            </serviceAccess>
-            <serviceAccess>
-                <serviceName>@importFromXML</serviceName>
                 <servicePermission>D</servicePermission>
             </serviceAccess>
             <serviceAccess>
@@ -104,6 +76,22 @@
             </serviceAccess>
             <serviceAccess>
                 <serviceName>@validation</serviceName>
+                <servicePermission>D</servicePermission>
+            </serviceAccess>
+            <serviceAccess>
+                <serviceName>@exportToCSV</serviceName>
+                <servicePermission>E</servicePermission>
+            </serviceAccess>
+            <serviceAccess>
+                <serviceName>@exportToXML</serviceName>
+                <servicePermission>E</servicePermission>
+            </serviceAccess>
+            <serviceAccess>
+                <serviceName>@importFromCSV</serviceName>
+                <servicePermission>D</servicePermission>
+            </serviceAccess>
+            <serviceAccess>
+                <serviceName>@importFromXML</serviceName>
                 <servicePermission>D</servicePermission>
             </serviceAccess>
         </listServicesAccess>
@@ -123,7 +111,7 @@
                 <createAllowed>false</createAllowed>
                 <overwriteAllowed>false</overwriteAllowed>
                 <occultAllowed>false</occultAllowed>
-                <deleteAllowed>true</deleteAllowed>
+                <deleteAllowed>false</deleteAllowed>
             </tableDefaultActions>
         </tableActions>
         <valueAccess>
@@ -135,11 +123,11 @@
                 <servicePermission>E</servicePermission>
             </serviceAccess>
             <serviceAccess>
-                <serviceName>ebx-addon-adix@ExportExcel</serviceName>
+                <serviceName>ebx-addon-adix@ExportMultipleTables</serviceName>
                 <servicePermission>E</servicePermission>
             </serviceAccess>
             <serviceAccess>
-                <serviceName>ebx-addon-adix@ExportMultipleTables</serviceName>
+                <serviceName>ebx-addon-adix@ExportExcel</serviceName>
                 <servicePermission>E</servicePermission>
             </serviceAccess>
             <serviceAccess>
@@ -159,11 +147,11 @@
                 <servicePermission>D</servicePermission>
             </serviceAccess>
             <serviceAccess>
-                <serviceName>ebx-addon-adix@ImportSingleExcel</serviceName>
+                <serviceName>ebx-addon-adix@ImportMultipleTables</serviceName>
                 <servicePermission>D</servicePermission>
             </serviceAccess>
             <serviceAccess>
-                <serviceName>ebx-addon-adix@ImportMultipleTables</serviceName>
+                <serviceName>ebx-addon-adix@ImportSingleExcel</serviceName>
                 <servicePermission>D</servicePermission>
             </serviceAccess>
             <serviceAccess>
@@ -172,34 +160,6 @@
             </serviceAccess>
             <serviceAccess>
                 <serviceName>ebx-addon-adix@TransferData</serviceName>
-                <servicePermission>D</servicePermission>
-            </serviceAccess>
-            <serviceAccess>
-                <serviceName>DisplayFullValidationReport</serviceName>
-                <servicePermission>E</servicePermission>
-            </serviceAccess>
-            <serviceAccess>
-                <serviceName>@exportToCSV</serviceName>
-                <servicePermission>E</servicePermission>
-            </serviceAccess>
-            <serviceAccess>
-                <serviceName>ExportDevArtifacts</serviceName>
-                <servicePermission>D</servicePermission>
-            </serviceAccess>
-            <serviceAccess>
-                <serviceName>@exportToXML</serviceName>
-                <servicePermission>E</servicePermission>
-            </serviceAccess>
-            <serviceAccess>
-                <serviceName>@importFromCSV</serviceName>
-                <servicePermission>D</servicePermission>
-            </serviceAccess>
-            <serviceAccess>
-                <serviceName>ImportDevArtifacts</serviceName>
-                <servicePermission>D</servicePermission>
-            </serviceAccess>
-            <serviceAccess>
-                <serviceName>@importFromXML</serviceName>
                 <servicePermission>D</servicePermission>
             </serviceAccess>
             <serviceAccess>
@@ -213,6 +173,22 @@
             <serviceAccess>
                 <serviceName>@validation</serviceName>
                 <servicePermission>E</servicePermission>
+            </serviceAccess>
+            <serviceAccess>
+                <serviceName>@exportToCSV</serviceName>
+                <servicePermission>E</servicePermission>
+            </serviceAccess>
+            <serviceAccess>
+                <serviceName>@exportToXML</serviceName>
+                <servicePermission>E</servicePermission>
+            </serviceAccess>
+            <serviceAccess>
+                <serviceName>@importFromCSV</serviceName>
+                <servicePermission>D</servicePermission>
+            </serviceAccess>
+            <serviceAccess>
+                <serviceName>@importFromXML</serviceName>
+                <servicePermission>D</servicePermission>
             </serviceAccess>
         </listServicesAccess>
     </accessRightsTable>

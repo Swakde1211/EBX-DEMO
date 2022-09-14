@@ -29,7 +29,9 @@ public class ClientModuleRegistration extends ModuleRegistrationListener{
 	public void handleServiceRegistration(ModuleServiceRegistrationContext context) {
 		// TODO Auto-generated method stub
 		//context.registerUserService(new FiinalDeclaration());
-		
+		context.registerUserService(new ImportDevArtifactsPropertiesFileDSDeclaration("cust-mdm"));
+		context.registerUserService(new ExportDevArtifactsPropertiesFileDSDeclaration("cust-mdm"));
+
 		super.handleServiceRegistration(context);
 		
 	}
