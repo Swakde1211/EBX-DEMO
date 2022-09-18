@@ -7,13 +7,13 @@
             <allowed>true</allowed>
         </dataPermissions>
         <dataSpacePermissions>
-            <allowed>false</allowed>
+            <allowed>true</allowed>
         </dataSpacePermissions>
         <modelingDMAPermissions>
-            <allowed>false</allowed>
+            <allowed>true</allowed>
         </modelingDMAPermissions>
         <modelingWorkflowPermissions>
-            <allowed>false</allowed>
+            <allowed>true</allowed>
         </modelingWorkflowPermissions>
         <workflowPermissions>
             <allowed>true</allowed>
@@ -24,10 +24,109 @@
             <completedWorkflowsAllowed>true</completedWorkflowsAllowed>
         </workflowPermissions>
         <dataSpaceServices>
-            <allowed>false</allowed>
+            <allowed>true</allowed>
             <restConnectorAllowed>true</restConnectorAllowed>
             <restOpenApiServicesAllowed>true</restOpenApiServicesAllowed>
             <soapConnectorAllowed>true</soapConnectorAllowed>
+            <wsdlConnectorAllowed>true</wsdlConnectorAllowed>
+        </dataSpaceServices>
+        <administration>
+            <allowed>false</allowed>
+            <repositoryManagementAllowed>false</repositoryManagementAllowed>
+            <userSessionManagementAllowed>false</userSessionManagementAllowed>
+        </administration>
+    </globalPermissionsTable>
+    <globalPermissionsTable>
+        <profile>RApprovalRole</profile>
+        <isRestrictionPolicy>false</isRestrictionPolicy>
+        <dataSpacePermissions>
+            <allowed>true</allowed>
+        </dataSpacePermissions>
+        <modelingDMAPermissions>
+            <allowed>true</allowed>
+        </modelingDMAPermissions>
+        <modelingWorkflowPermissions>
+            <allowed>true</allowed>
+        </modelingWorkflowPermissions>
+        <workflowPermissions>
+            <allowed>true</allowed>
+            <launcherAllowed>true</launcherAllowed>
+            <monitoringPublicationsAllowed>true</monitoringPublicationsAllowed>
+            <monitoringActiveWorkflowsAllowed>true</monitoringActiveWorkflowsAllowed>
+            <monitoringWorkItemsAllowed>true</monitoringWorkItemsAllowed>
+            <completedWorkflowsAllowed>true</completedWorkflowsAllowed>
+        </workflowPermissions>
+        <dataSpaceServices>
+            <allowed>true</allowed>
+            <restConnectorAllowed>true</restConnectorAllowed>
+            <restOpenApiServicesAllowed>true</restOpenApiServicesAllowed>
+            <soapConnectorAllowed>true</soapConnectorAllowed>
+            <wsdlConnectorAllowed>true</wsdlConnectorAllowed>
+        </dataSpaceServices>
+        <administration>
+            <allowed>false</allowed>
+            <repositoryManagementAllowed>false</repositoryManagementAllowed>
+            <userSessionManagementAllowed>false</userSessionManagementAllowed>
+        </administration>
+    </globalPermissionsTable>
+    <globalPermissionsTable>
+        <profile>RData Owner</profile>
+        <isRestrictionPolicy>false</isRestrictionPolicy>
+        <dataSpacePermissions>
+            <allowed>true</allowed>
+        </dataSpacePermissions>
+        <modelingDMAPermissions>
+            <allowed>true</allowed>
+        </modelingDMAPermissions>
+        <modelingWorkflowPermissions>
+            <allowed>true</allowed>
+        </modelingWorkflowPermissions>
+        <workflowPermissions>
+            <allowed>true</allowed>
+            <launcherAllowed>true</launcherAllowed>
+            <monitoringPublicationsAllowed>true</monitoringPublicationsAllowed>
+            <monitoringActiveWorkflowsAllowed>true</monitoringActiveWorkflowsAllowed>
+            <monitoringWorkItemsAllowed>true</monitoringWorkItemsAllowed>
+            <completedWorkflowsAllowed>true</completedWorkflowsAllowed>
+        </workflowPermissions>
+        <dataSpaceServices>
+            <allowed>true</allowed>
+            <restConnectorAllowed>true</restConnectorAllowed>
+            <restOpenApiServicesAllowed>true</restOpenApiServicesAllowed>
+            <soapConnectorAllowed>true</soapConnectorAllowed>
+            <wsdlConnectorAllowed>true</wsdlConnectorAllowed>
+        </dataSpaceServices>
+        <administration>
+            <allowed>false</allowed>
+            <repositoryManagementAllowed>false</repositoryManagementAllowed>
+            <userSessionManagementAllowed>false</userSessionManagementAllowed>
+        </administration>
+    </globalPermissionsTable>
+    <globalPermissionsTable>
+        <profile>RData Steward</profile>
+        <isRestrictionPolicy>true</isRestrictionPolicy>
+        <dataSpacePermissions>
+            <allowed>true</allowed>
+        </dataSpacePermissions>
+        <modelingDMAPermissions>
+            <allowed>false</allowed>
+        </modelingDMAPermissions>
+        <modelingWorkflowPermissions>
+            <allowed>false</allowed>
+        </modelingWorkflowPermissions>
+        <workflowPermissions>
+            <allowed>true</allowed>
+            <launcherAllowed>true</launcherAllowed>
+            <monitoringPublicationsAllowed>false</monitoringPublicationsAllowed>
+            <monitoringActiveWorkflowsAllowed>true</monitoringActiveWorkflowsAllowed>
+            <monitoringWorkItemsAllowed>false</monitoringWorkItemsAllowed>
+            <completedWorkflowsAllowed>false</completedWorkflowsAllowed>
+        </workflowPermissions>
+        <dataSpaceServices>
+            <allowed>false</allowed>
+            <restConnectorAllowed>false</restConnectorAllowed>
+            <restOpenApiServicesAllowed>false</restOpenApiServicesAllowed>
+            <soapConnectorAllowed>false</soapConnectorAllowed>
             <wsdlConnectorAllowed>false</wsdlConnectorAllowed>
         </dataSpaceServices>
         <administration>
@@ -37,7 +136,7 @@
         </administration>
     </globalPermissionsTable>
     <globalPermissionsTable>
-        <profile>RTech Admin</profile>
+        <profile>RRole1</profile>
         <isRestrictionPolicy>false</isRestrictionPolicy>
         <dataSpacePermissions>
             <allowed>true</allowed>

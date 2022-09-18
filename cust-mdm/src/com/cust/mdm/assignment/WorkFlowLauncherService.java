@@ -9,9 +9,7 @@ import com.orchestranetworks.ui.selection.*;
 import com.orchestranetworks.userservice.*;
 import com.orchestranetworks.userservice.declaration.*;
 
-/**
- * Declares the Maintain Customer Organization launcher service
- */
+
 public class WorkFlowLauncherService
     extends
     GenericServiceDeclaration<TableViewEntitySelection, ActivationContextOnTableView>
@@ -34,12 +32,9 @@ public class WorkFlowLauncherService
         return service;
     }
     
-   // @SuppressWarnings({ "unchecked", "rawtypes" })
     @Override
       public void defineActivation(final ActivationContextOnTableView context) {
-      /*  CompoundServicePermissionRule CompoundServicePermissionRule = new CompoundServicePermissionRule<>();
-        CompoundServicePermissionRule.appendRule(new ClientModuleRegistration());
-      */  
+     
         
         context.includeSchemaNodesMatching(Mypaths._Root_Customer.getPathInSchema());
       }

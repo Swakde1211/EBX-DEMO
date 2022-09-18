@@ -19,13 +19,12 @@ public class Filter implements TableRefFilter{
 		// TODO Auto-generated method stub
 		
 		
-		final String country =(String)context.getValue(Path.PARENT.add(Path.PARENT).add(Mypaths._Root_Address._Root_Address_Address_Country));
+		final String country =(String)context.getValue(Path.PARENT.add(Path.PARENT)
+				.add(Mypaths._Root_Address._Root_Address_Address_Country));
 
 		final String filterCountry=(String)record.get(Mypaths1._Root_Subdivision._Root_Subdivision_Countries);
 		
 		return country.equals(filterCountry);
-		
-
 		
 	}
 

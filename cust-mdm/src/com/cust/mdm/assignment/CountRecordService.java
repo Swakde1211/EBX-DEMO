@@ -72,78 +72,54 @@ public class CountRecordService implements UserService<TableViewEntitySelection>
 	private int getCount(UserServiceSetupDisplayContext<TableViewEntitySelection> context) {
 
 		AdaptationTable history = context.getEntitySelection().getTable().getHistory();
-
 		String idPath = "./ID";
-		
 		Path operationsPath = Path.parse("./ebx-technical/op");
-
 		String query = "./ebx-technical/op = 'U'";
-
-
 		Set<Integer> set = new HashSet<>();
-
 		RequestResult UpdatedRecords = history.createRequestResult(query);
 		Adaptation record = UpdatedRecords.nextAdaptation();
-		int size=UpdatedRecords.getSize();
+		int size = UpdatedRecords.getSize();
 		int count = 0;
 		while (record != null) {
-			
 			int id = (Integer) record.get(Path.parse("./ID"));
 			int trans_id = (Integer) record.get(Path.parse("/ebx-technical/tx_id"));
-			
 			if (set.contains(id)) {
-				 record = UpdatedRecords.nextAdaptation();
-				
+				record = UpdatedRecords.nextAdaptation();
 				continue;
 			}
-
 			set.add(id);
-			String query1 = "./ebx-technical/op = 'D' and ./ID  =  '"+id+"'";
+			String query1 = "./ebx-technical/op = 'D' and ./ID  =  '" + id + "'";
 			RequestResult DeletedRecords = history.createRequestResult(query1);
 			Adaptation record1 = DeletedRecords.nextAdaptation();
 			if (record1 == null) {
 				count = count + 1;
 			} else {
-				String query2 = "./ebx-technical/op = 'C' and ./ID  =  '"+id+"'";
+				String query2 = "./ebx-technical/op = 'C' and ./ID  =  '" + id + "'";
 				RequestResult CreatedRecords = history.createRequestResult(query2);
 				Adaptation record2 = CreatedRecords.nextAdaptation();
-//
 				Integer tras_id1 = (Integer) record.get(Path.parse("/ebx-technical/tx_id"));
 				Integer tras_id2 = Integer.MIN_VALUE;
 				Integer tras_id3 = Integer.MIN_VALUE;
-//
-				while(record1 !=null )
-				{
-					int temp=(Integer) record1.get(Path.parse("/ebx-technical/tx_id"));
-					tras_id2=Math.max(tras_id2, temp);
-					record1=DeletedRecords.nextAdaptation();
+				while (record1 != null) {
+					int temp = (Integer) record1.get(Path.parse("/ebx-technical/tx_id"));
+					tras_id2 = Math.max(tras_id2, temp);
+					record1 = DeletedRecords.nextAdaptation();
 				}
-				
-				while(record2 !=null )
-				{
-					int temp=(Integer) record2.get(Path.parse("/ebx-technical/tx_id"));
-					tras_id3=Math.max(tras_id3, temp);
-					record2=CreatedRecords.nextAdaptation();
+				while (record2 != null) {
+					int temp = (Integer) record2.get(Path.parse("/ebx-technical/tx_id"));
+					tras_id3 = Math.max(tras_id3, temp);
+					record2 = CreatedRecords.nextAdaptation();
 				}
-				
-				
-			
-				
-				
 				if (tras_id2 > tras_id3) {
 					continue;
 				}
-//
-				 if (tras_id1 > tras_id3) {
+				if (tras_id1 > tras_id3) {
 					count = count + 1;
 				}
-//
 			}
-
 			record = UpdatedRecords.nextAdaptation();
 		}
 		return count;
-
 	}
 
 	@Override

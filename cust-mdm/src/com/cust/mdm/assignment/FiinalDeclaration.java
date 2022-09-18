@@ -18,8 +18,8 @@ import com.orchestranetworks.userservice.declaration.ActivationContextOnRecord;
 import com.orchestranetworks.userservice.declaration.ActivationContextOnTableView;
 import com.orchestranetworks.userservice.declaration.UserServiceDeclaration;
 
-public class FiinalDeclaration extends GenericServiceDeclaration<RecordEntitySelection, ActivationContextOnRecord>
-		implements UserServiceDeclaration.OnRecord {
+public class FiinalDeclaration extends GenericServiceDeclaration<RecordEntitySelection, 
+ActivationContextOnRecord>implements UserServiceDeclaration.OnRecord {
 	//public static final ServiceKey SERVICE_KEY = ServiceKey.forModuleServiceName("cust-mdm",
 	//		"Customer_Update_Workflow");
 	public static final ServiceKey SERVICE_KEY = ServiceKey.forName(

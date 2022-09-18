@@ -4,9 +4,8 @@
         <properties>
             <activated>true</activated>
             <perspectiveType>Advanced</perspectiveType>
-            <allowedProfiles>Badministrator</allowedProfiles>
+            <allowedProfiles>Beveryone</allowedProfiles>
             <allowedProfiles>RTech Admin</allowedProfiles>
-            <allowedProfiles>RWorkflow Administrator</allowedProfiles>
         </properties>
     </domain>
 </x:root>

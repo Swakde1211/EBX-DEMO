@@ -20,25 +20,8 @@ public class PermissionCondition implements AccessRule{
 			return AccessPermission.getReadWrite();
 		}
 
-		
-		/*
-		 * final Date date=(Date)adaptation.getDate(Mypaths._Root_Customer.
-		 * _Root_Customer_CustomerMain_CreatedDate);
-		 * 
-		 * SimpleDateFormat formate = new SimpleDateFormat("dd/MM/yy"); String modd =
-		 * formate.format(date);
-		 * 
-		 */
 		Calendar current_date=Calendar.getInstance();
 		int currentDay=current_date.get(Calendar.DAY_OF_MONTH);
-
-		
-		/*
-		 * Date date = new Date(); LocalDate localDate =
-		 * date.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
-		 * 
-		 * int day = localDate.getDayOfMonth();
-		 */
 		
 		 if(currentDay >1 && currentDay<15 && session.getInteraction(true) == null)
 		{

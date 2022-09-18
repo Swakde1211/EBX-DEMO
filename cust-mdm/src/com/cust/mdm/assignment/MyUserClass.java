@@ -28,26 +28,17 @@ public class MyUserClass extends ScriptTask implements ProjectPathCapable {
 		
 	try {
 		String record = context.getVariableString("item");
-	
-	
-		
-		AdaptationHome dataspace = 	toDataspace(context.getRepository(), context.getVariableString("dataspace"));
+		AdaptationHome dataspace = toDataspace(context.getRepository(),context.getVariableString("dataspace"));
 		Adaptation dataset = toDataset(dataspace, context.getVariableString("dataset"));
 		AdaptationTable table = toTable(dataset, context.getVariableString("itemTable"));
-		
 		String id = record.substring(20, record.length() - 1);
 		String predicate = Mypaths._Root_Customer._Root_Customer_ID.format() + " = '"+id+"'";
 		RequestResult rr = table.createRequestResult(predicate);
 		Adaptation record1 = rr.nextAdaptation();
-		
-		// xpath to record 
-//		
 		ModifyValuesProcedure mvp=new ModifyValuesProcedure(record1);
-  mvp.setValue(Mypaths._Root_Customer._Root_Customer_CustomerMain_UserID, cvariable);
-  mvp.setValue(Mypaths._Root_Customer._Root_Customer_CustomerMain_Type, "Updated");
-//		
+		mvp.setValue(Mypaths._Root_Customer._Root_Customer_CustomerMain_UserID, cvariable);
+		mvp.setValue(Mypaths._Root_Customer._Root_Customer_CustomerMain_Type, "Updated");
 		mvp.execute(context.getSession(), dataspace);
-//	
 		}
 		catch(NullPointerException e)
         {
@@ -72,7 +63,6 @@ public class MyUserClass extends ScriptTask implements ProjectPathCapable {
 			throw OperationException.createError("error");
 		}
 	}
-
 	private static Adaptation toDataset(final AdaptationHome dataspace, final String datasetName)
 			throws OperationException {
 		try {
@@ -86,7 +76,6 @@ public class MyUserClass extends ScriptTask implements ProjectPathCapable {
 			throw OperationException.createError("error");
 		}
 	}
-
 	private static AdaptationTable toTable(final Adaptation dataset, final String tablePath) throws OperationException {
 		try {
 			final AdaptationTable table = dataset.getTable(Path.parse(tablePath));
@@ -101,8 +90,6 @@ public class MyUserClass extends ScriptTask implements ProjectPathCapable {
 		// TODO Auto-generated method stub
 		return null;
 	}
-
-//record aur work user read karna hai....get.record....modify 
-//processure se set karna hai 
+ 
 
 }

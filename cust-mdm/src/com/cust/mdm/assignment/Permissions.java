@@ -25,7 +25,6 @@ public class Permissions implements SchemaExtensions{
 		
 		final Path path = Mypaths._Root_Customer.getPathInSchema();
 		final AccessRule accessRule = new PermissionCondition();
-	//	context.setAccessRuleOnNode(path, accessRule);
 		context.setAccessRuleOnOccurrence(path, accessRule);
 		context.registerUserService(new UserDeclaration());
 		context.registerUserService(new FiinalDeclaration());

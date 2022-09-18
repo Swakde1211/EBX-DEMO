@@ -4,10 +4,10 @@
         <optionsDefault>
             <importExport>
                 <csvCharset>UTF-8</csvCharset>
-                <csvSeparator>,</csvSeparator>
+                <csvSeparator>;</csvSeparator>
                 <csvListSeparator>&#13;</csvListSeparator>
                 <importMode>O</importMode>
-                <xmlMissingValue>false</xmlMissingValue>
+                <xmlMissingValue>true</xmlMissingValue>
                 <xmlIgnoreExtraColumns>false</xmlIgnoreExtraColumns>
             </importExport>
         </optionsDefault>

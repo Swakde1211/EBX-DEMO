@@ -6,6 +6,7 @@
         <selfEditionFields>/firstName</selfEditionFields>
         <selfEditionFields>/lastName</selfEditionFields>
         <selfEditionFields>/email</selfEditionFields>
+        <selfEditionFields>/avatar</selfEditionFields>
         <selfEditionFields>/password</selfEditionFields>
         <selfEditionFields>/jobFunction</selfEditionFields>
         <selfEditionFields>/officePhoneNumber</selfEditionFields>

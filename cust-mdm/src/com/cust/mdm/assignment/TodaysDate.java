@@ -15,13 +15,6 @@ import com.orchestranetworks.schema.trigger.TriggerSetupContext;
 import com.orchestranetworks.service.OperationException;
 
 public class TodaysDate extends  TableTrigger {
-
-	@Override
-	public void setup(TriggerSetupContext arg0) {
-		// TODO Auto-generated method stub
-		
-	}
-
 	@Override
 	public void handleBeforeCreate(BeforeCreateOccurrenceContext context) throws OperationException {
 		// TODO Auto-generated method stub
@@ -30,7 +23,6 @@ public class TodaysDate extends  TableTrigger {
 		context.getOccurrenceContextForUpdate().setValueEnablingPrivilegeForNode(new Date(), Mypaths._Root_Customer._Root_Customer_CustomerMain_CreatedDate); 
 
 	}
-
 	@Override
 	public void handleBeforeModify(BeforeModifyOccurrenceContext context) throws OperationException {
 		final ValueContext valueContext = context.getOccurrenceContext();
@@ -38,7 +30,6 @@ public class TodaysDate extends  TableTrigger {
 		SimpleDateFormat formate = new SimpleDateFormat("dd/MM/yy");
 	       String modd = formate.format(modifieddate);
 	      
-		
 		  Date date = new Date();
 	      SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yy");
 	       String cur = formatter.format(date);
@@ -50,9 +41,7 @@ public class TodaysDate extends  TableTrigger {
       int difference = (int) (dateAfter.getTime() - dateBefore.getTime());
       int daysBetween = Math.abs(difference / (1000*60*60*24));
       
-      
-	
-      context.getOccurrenceContextForUpdate().setValue(daysBetween,Mypaths._Root_Customer._Root_Customer_CustomerMain_Create_difference_in_Days );
+       context.getOccurrenceContextForUpdate().setValue(daysBetween,Mypaths._Root_Customer._Root_Customer_CustomerMain_Create_difference_in_Days );
 		
 	  } catch (Exception e) {
 	       e.printStackTrace();
@@ -61,6 +50,12 @@ public class TodaysDate extends  TableTrigger {
 
 	  
 	  
+		
+	}
+
+	@Override
+	public void setup(TriggerSetupContext arg0) {
+		// TODO Auto-generated method stub
 		
 	}
 

@@ -10,13 +10,13 @@ import com.orchestranetworks.userservice.declaration.UserServicePropertiesDefini
 import com.orchestranetworks.userservice.declaration.WebComponentDeclarationContext;
 
 public class UserDeclaration implements UserServiceDeclaration.OnTableView{
-
 	@Override
-	public void declareWebComponent(WebComponentDeclarationContext aContext) {
+	public UserService<TableViewEntitySelection> createUserService() {
 		// TODO Auto-generated method stub
+		return new CountRecordService();
 		
 	}
-
+	
 	@Override
 	public void defineActivation(ActivationContextOnTableView context) {
 		// TODO Auto-generated method stub
@@ -37,10 +37,10 @@ public class UserDeclaration implements UserServiceDeclaration.OnTableView{
 		
 	}
 
+
 	@Override
-	public UserService<TableViewEntitySelection> createUserService() {
+	public void declareWebComponent(WebComponentDeclarationContext aContext) {
 		// TODO Auto-generated method stub
-		return new CountRecordService();
 		
 	}
 

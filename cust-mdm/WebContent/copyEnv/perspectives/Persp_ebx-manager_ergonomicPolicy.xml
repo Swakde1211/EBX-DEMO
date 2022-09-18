@@ -2,65 +2,27 @@
 <x:root xmlns:x="urn:ebx-schemas:cfx_1.0">
     <domain>
         <ergonomicPolicy>
-            <bottomBarButtonLabelClose>
-                <localizedDocumentations>
-                    <locale>en_US</locale>
-                </localizedDocumentations>
-                <localizedDocumentations>
-                    <locale>fr_FR</locale>
-                </localizedDocumentations>
-            </bottomBarButtonLabelClose>
-            <bottomBarButtonLabelRevert>
-                <localizedDocumentations>
-                    <locale>en_US</locale>
-                    <label>Refresh</label>
-                </localizedDocumentations>
-                <localizedDocumentations>
-                    <locale>fr_FR</locale>
-                </localizedDocumentations>
-            </bottomBarButtonLabelRevert>
-            <bottomBarButtonLabelSaveAndStay>
-                <localizedDocumentations>
-                    <locale>en_US</locale>
-                </localizedDocumentations>
-                <localizedDocumentations>
-                    <locale>fr_FR</locale>
-                </localizedDocumentations>
-            </bottomBarButtonLabelSaveAndStay>
-            <bottomBarButtonLabelSaveAndClose>
-                <localizedDocumentations>
-                    <locale>en_US</locale>
-                </localizedDocumentations>
-                <localizedDocumentations>
-                    <locale>fr_FR</locale>
-                </localizedDocumentations>
-            </bottomBarButtonLabelSaveAndClose>
-            <tableRecordColumnsMaxPolicy>30</tableRecordColumnsMaxPolicy>
+            <tableRecordColumnsMaxPolicy>10</tableRecordColumnsMaxPolicy>
             <tableColumnsMaxAutoWidth>200</tableColumnsMaxAutoWidth>
             <hierarchyExpandAllThreshold>2000</hierarchyExpandAllThreshold>
             <defaultFilter>simpleSearch</defaultFilter>
             <messageBoxAutodisplaySeverity>W</messageBoxAutodisplaySeverity>
             <IECompatibilityMode>true</IECompatibilityMode>
-            <_customCSS_labelWidth>350</_customCSS_labelWidth>
-            <_customCSS_inputWidth>500</_customCSS_inputWidth>
-            <_customCSS_textareaHeight>50</_customCSS_textareaHeight>
+            <_customCSS_labelWidth>250</_customCSS_labelWidth>
+            <_customCSS_inputWidth>400</_customCSS_inputWidth>
+            <_customCSS_textareaHeight>200</_customCSS_textareaHeight>
             <_textarea_technicalMaxLength>1000000</_textarea_technicalMaxLength>
-            <listEditor>
-                <simpleType>15</simpleType>
-                <complexType>7</complexType>
-                <complexTypeEmbedded>3</complexTypeEmbedded>
-            </listEditor>
-            <_customCSS_htmlEditorWidth>500</_customCSS_htmlEditorWidth>
-            <_customCSS_htmlEditorHeight>150</_customCSS_htmlEditorHeight>
+            <_customCSS_htmlEditorWidth>400</_customCSS_htmlEditorWidth>
+            <_customCSS_htmlEditorHeight>100</_customCSS_htmlEditorHeight>
             <_optionsDefault_htmlSpellcheck>false</_optionsDefault_htmlSpellcheck>
-            <ajaxFacetEnumerationPageSize>30</ajaxFacetEnumerationPageSize>
+            <ajaxFacetEnumerationPageSize>10</ajaxFacetEnumerationPageSize>
             <openUrlInWindow>InWindow</openUrlInWindow>
-            <recordFormNodesDisplayMode>2</recordFormNodesDisplayMode>
+            <recordFormNodesDisplayMode>1</recordFormNodesDisplayMode>
             <enableDisplaySelectionAndSncInCreation>false</enableDisplaySelectionAndSncInCreation>
             <displayDensity>COMPACT</displayDensity>
-            <avatarHeader>UA</avatarHeader>
-            <avatarHistory>AU</avatarHistory>
-            <avatarWorkflow>U</avatarWorkflow>
+            <avatarHeader>A</avatarHeader>
+            <avatarHistory>A</avatarHistory>
+            <avatarWorkflow>A</avatarWorkflow>
             <accessibilityModeActive>false</accessibilityModeActive>
         </ergonomicPolicy>
     </domain>
