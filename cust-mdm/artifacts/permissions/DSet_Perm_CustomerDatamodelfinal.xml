@@ -83,6 +83,15 @@
                 <occultAllowed>true</occultAllowed>
                 <deleteAllowed>false</deleteAllowed>
             </tableDefaultActions>
+            <tableSpecificsActions>
+                <nodePath>/root/Customer</nodePath>
+                <accessRightTableAction>
+                    <createAllowed>true</createAllowed>
+                    <overwriteAllowed>true</overwriteAllowed>
+                    <occultAllowed>true</occultAllowed>
+                    <deleteAllowed>true</deleteAllowed>
+                </accessRightTableAction>
+            </tableSpecificsActions>
         </tableActions>
         <valueAccess>
             <valueAccessDefault>W</valueAccessDefault>

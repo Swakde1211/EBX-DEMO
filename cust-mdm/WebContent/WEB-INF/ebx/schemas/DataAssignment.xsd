@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--XML schema generated from EBX(R) DMA instance [reference=CustomerDataModel] on Mon Sep 05 09:21:07 IST 2022 by user [admin].-->
+<!--XML schema generated from EBX(R) DMA instance [reference=CustomerDataModel] on Fri Sep 23 10:34:09 IST 2022 by user [admin].-->
 <xs:schema xmlns:osd="urn:ebx-schemas:common_1.0" xmlns:fmt="urn:ebx-schemas:format_1.0" xmlns:ebxbnd="urn:ebx-schemas:binding_1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ebxs="urn:ebx-schemas:session_1.0">
     <xs:import namespace="urn:ebx-schemas:common_1.0" schemaLocation="http://schema.orchestranetworks.com/common_1.0.xsd"/>
     <xs:import namespace="urn:ebx-schemas:session_1.0" schemaLocation="http://schema.orchestranetworks.com/session_1.0.xsd"/>
@@ -12,11 +12,29 @@
             <osd:inheritance>
                 <dataSetInheritance>none</dataSetInheritance>
             </osd:inheritance>
-            <ebxbnd:binding targetDirectory="C:\Employee\employeeworkspace\cust-mdm\WebContent\..\src">
+            <ebxbnd:binding targetDirectory="C:/Employee/employeeworkspace/cust-mdm/WebContent/../src">
                 <javaPathConstants typeName="com.cust.mdm.CustAssign.Mypaths">
                     <nodes root="/root" relativeToRoot="false"/>
                 </javaPathConstants>
             </ebxbnd:binding>
+            <osd:replication>
+                <name>CustomerDataModel</name>
+                <dataSpace>CustomDataspace</dataSpace>
+                <dataSet>CustomerDataModel</dataSet>
+                <refresh>onDemand</refresh>
+                <table>
+                    <path>/root/Customer</path>
+                    <nameInDatabase>Customer</nameInDatabase>
+                </table>
+                <table>
+                    <path>/root/Address</path>
+                    <nameInDatabase>Address</nameInDatabase>
+                </table>
+                <table>
+                    <path>/root/CustomerAddress</path>
+                    <nameInDatabase>CustomerAddress</nameInDatabase>
+                </table>
+            </osd:replication>
         </xs:appinfo>
     </xs:annotation>
     <xs:element name="root" osd:access="--">
@@ -35,7 +53,19 @@
                     <xs:complexType>
                         <xs:sequence>
                             <xs:element name="ID" type="xs:int" minOccurs="1" maxOccurs="1"/>
-                            <xs:element name="CustomerMain">
+                            <xs:element name="Email" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Email</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:maxLength value="20"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="CustomerMain" minOccurs="1" maxOccurs="1">
                                 <xs:complexType>
                                     <xs:sequence>
                                         <xs:element name="Name" minOccurs="0" maxOccurs="1">
@@ -64,7 +94,7 @@
                                     </xs:sequence>
                                 </xs:complexType>
                             </xs:element>
-                            <xs:element name="CustomerAddresses">
+                            <xs:element name="CustomerAddresses" minOccurs="1" maxOccurs="1">
                                 <xs:complexType>
                                     <xs:sequence>
                                         <xs:element name="CustomerAddress" type="xs:string" minOccurs="0" maxOccurs="0">
@@ -100,7 +130,7 @@
                     <xs:complexType>
                         <xs:sequence>
                             <xs:element name="ID" type="xs:int" minOccurs="1" maxOccurs="1"/>
-                            <xs:element name="Address">
+                            <xs:element name="Address" minOccurs="1" maxOccurs="1">
                                 <xs:complexType>
                                     <xs:sequence>
                                         <xs:element name="Address_Line_1" minOccurs="0" maxOccurs="1">
@@ -132,7 +162,7 @@
                                                 <xs:appinfo>
                                                     <osd:otherFacets>
                                                         <osd:tableRef>
-                                                            <container>CommonReferenceDataFinal</container>
+                                                            <container>CommonReferenceDataset</container>
                                                             <branch>CommonReferenceDataspace</branch>
                                                             <tablePath>/root/Countries</tablePath>
                                                         </osd:tableRef>
@@ -145,7 +175,7 @@
                                                 <xs:appinfo>
                                                     <osd:otherFacets>
                                                         <osd:tableRef>
-                                                            <container>CommonReferenceDataFinal</container>
+                                                            <container>CommonReferenceDataset</container>
                                                             <branch>CommonReferenceDataspace</branch>
                                                             <tablePath>/root/Subdivision</tablePath>
                                                             <filter osd:class="com.cust.mdm.assignment.Filter"/>
@@ -190,6 +220,7 @@
                                             <sourceRecord>/root/CustomerAddress/CustomerID</sourceRecord>
                                             <sourceNode>./CustomerMain/Type</sourceNode>
                                         </osd:inheritance>
+                                        <osd:replication disable="false"/>
                                     </xs:appinfo>
                                 </xs:annotation>
                                 <xs:simpleType>
